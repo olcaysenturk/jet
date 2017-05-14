@@ -1,0 +1,22 @@
+{
+  "name": "enuygun",
+  "description": "",
+  "main": "Gruntfile.js",
+  "license": "ISC",
+  "homepage": "https://github.com/olcaysenturk/enuygun",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "dev/assets/js/lib",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "private": true,
+  "authors": [
+    "user-Bilgisayar\\user <olcaysenturkk@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

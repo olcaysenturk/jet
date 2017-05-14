@@ -1,0 +1,316 @@
+//------------------------------------------------------------
+// = GLOBAL
+//------------------------------------------------------------
+@import "bs"; 
+@import "variables";
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "css3-mixins";
+@import "plugin/hover/hover";
+
+body {text-size-adjust: 100%; -webkit-overflow-scrolling: touch; background: #f9f9f9; font-family: 'Roboto', sans-serif;}
+body, input, select, textarea {font-size: 13px ; color: $black;}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 600;}
+a {color: $black; text-decoration: none;}
+a, input, select, textarea, :focus {outline: none !important;}
+input, select, textarea, :focus {-webkit-appearance: none;}
+img {border: 0;}
+figure {margin: 0;}
+ul {margin: 0; padding: 0; list-style: none;}
+textarea {resize: none;}
+strong { font-weight: 600;}
+a{@include transition(all .5s ease-in-out);}
+::selection {
+	color: #fff;
+	background: $jet;
+}
+::-moz-selection {
+	color: #fff;
+	background: $jet;
+}
+.clear{clear: both; display: block;}
+
+//------------------------------------------------------------
+// = LAYOUT
+//------------------------------------------------------------
+
+.site{
+	display:block;
+	float: left;
+	width: $full;
+	.nav-menu{
+		display: block;
+		width: $full;
+		padding: 0 50px;
+		position: absolute;
+		height: 62px;
+		top: 20px;
+		z-index: 9;
+		.logo{
+			margin-top: 11px;
+			img{
+
+			}
+		}
+		.m-box{
+			text-align: right;
+			.menu{
+				display: inline-block;
+				margin-top: 22px;
+				li{
+					display: inline-block;
+					margin-right: 30px;
+					&:last-child{
+						margin-right: 0;
+					}
+					a{
+						color: $white;
+						font-size: $font-size-m;
+						font-weight: 500;
+						position: relative;
+						&:before{
+							content:"";
+							width: 8px;
+							height: 8px;
+							background: $white;
+							position: absolute;
+							left:0;
+							right:0;
+							margin: 0 auto;
+							bottom: -15px;
+							@include transition(all .5s ease-in-out);
+							@include border-radius(25px);
+							@include opacity(0);
+							
+						}
+						&:hover,&.active{
+							text-decoration:none;
+							&:before{
+								@include opacity(1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.home-banner{
+		display:block;
+		width: $full;
+		height: 100vh;
+		background: url(../images/home/home-banner.jpg)  no-repeat;
+		@include background-size(cover);
+		position: relative;
+		.text{
+			display:table;
+			width: $full;
+			height: 100vh;
+			h1{
+				display:table-cell;
+				font-size: $font-size-xl;
+				line-height: $font-size-xl-lh;
+				color: $white;
+				text-align: center;
+				vertical-align: middle;
+				@include text-shadow(1px,1px,5px,$black);
+			}
+		}
+		.arrow{
+			position: absolute;
+			display: inline-block;
+			width: 100px;
+			text-align: center;
+			color: $white;
+			font-size: $font-size-m;
+			bottom: 60px;
+			z-index:1;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			cursor: pointer;
+			span{
+				display: block;
+				margin-bottom: 20px;
+				font-size: 40px;
+				line-height: 0;
+				width: $full;
+			}
+			&:hover{
+				@include hacks();
+				&:hover,
+				&:focus,
+				&:active {
+					@include prefixed(animation-name, #{$nameSpace}-wobble-vertical);
+					@include prefixed(animation-duration, 1s);
+					@include prefixed(animation-timing-function, ease-in-out);
+					@include prefixed(animation-iteration-count, 1);
+				}
+			}
+		}
+	}
+	.h-com{
+		display: block;
+		width: $full;
+		margin-top: 40px;
+		margin-bottom: 50px;
+		h2{
+			display: block;
+			color: $black-1;
+			font-size: $font-size-x;
+			line-height: $font-size-x-lh;
+			font-weight: normal;
+			position: relative;
+			padding-bottom: 50px;
+			strong{
+				font-weight: 600;
+			}
+			&:before{
+				content:"";
+				width: 8px;
+				height:8px;
+				background: $jet;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				@include border-radius(25px);
+			}
+		}
+	}
+	.home-work{
+		display: block;
+		width: $full;
+		margin-bottom:140px;
+		.item{
+			position: relative;
+			margin-bottom: 30px;
+			cursor: pointer;
+			&:hover{
+				.img{
+
+					img{
+						-webkit-box-shadow: 0px 6px 31px -6px red;
+						-moz-box-shadow: 0px 6px 31px -6px red;
+						box-shadow: 0px 6px 31px -6px red;
+					}
+				}
+			}
+			.text-b{
+				position: absolute;
+				width: calc(100% - 60px);
+				height: $full;
+				left: 45px;
+				top: 0;
+				h3{
+					display: block;
+					color: $white;
+					font-size: $font-size-l;
+					margin-top:30px;
+				}
+				.job{
+					position: absolute;
+					left:0;
+					bottom:30px;
+					color: $white;
+					font-size: $font-size-xx;
+					line-height: $font-size-xx-lh;
+					span{
+						display:block;
+					}
+				}
+			}
+			.img{
+				display: block;
+				img{
+					position:relative;
+					display:block;
+					width: $full;
+					@include transition(all .5s ease-in-out);
+				}
+			}
+		}
+		.btn-box{
+			display: block;
+			margin-top:10px;
+			border-top: 1px solid #e0e0e0;
+			border-bottom:  1px solid #e0e0e0;
+			padding: 25px 0;
+			text-align: center;
+			a{
+				display:inline-block;
+				color: $black-1;
+				font-weight:500;
+				font-size: $font-size-m;
+			}
+		}
+	}
+	footer{
+		display: block;
+		width: $full;
+		background: $jet;
+		height: 80px;
+		.copy-r{
+			color: $white;
+			height: 80px;
+			display: table;
+			font-size: $font-size-m;
+			span{
+				display:table-cell;
+				vertical-align: middle;
+			}
+		}
+		.social{
+			height: 80px;
+			display: table;
+			span{
+				display:table-cell;
+				vertical-align: middle;
+				text-align: right;
+				ul{
+					display: inline-block;
+					li{
+						display: inline-block;
+						width:20px;
+						height:20px;
+						position: relative;
+						margin-right: 10px;
+						a{
+							display: block;
+							position: absolute;
+							left:0;
+							top:0;
+							width: $full;
+							height: $full;
+						}
+						&.fb{
+							background: url(../images/home/fb.png) center no-repeat;
+						}
+						&.tw{
+							background: url(../images/home/tw.png) center no-repeat;
+						}
+						&.you{
+							background: url(../images/home/you.png) center no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+//------------------------------------------------------------
+// = MEDIA QUERIES
+//------------------------------------------------------------
+@media screen and (max-width: $screen-md-max) {
+	@import "tablet-landscape";
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	@import "tablet-portrait";
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	@import "phone";
+}
