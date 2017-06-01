@@ -30,6 +30,7 @@ a{@include transition(all .5s ease-in-out);}
 	background: $jet;
 }
 .clear{clear: both; display: block;}
+.noscroll{overflow:hidden;}
 
 //------------------------------------------------------------
 // = LAYOUT
@@ -49,18 +50,56 @@ a{@include transition(all .5s ease-in-out);}
 		z-index: 9;
 		.logo{
 			margin-top: 11px;
+			@media all and (max-width:767px){
+				position:relative;
+				z-index:3;
+			}
 			img{
 
 			}
 		}
 		.m-box{
 			text-align: right;
+			@media all and (max-width:767px){
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background:  #2e99d6;
+				display:none;
+				height: 100%;
+			}
+			@media all and (min-width:768px){
+				display:inline-block !important;
+			}
+			.nav-content{
+				display:block;
+				width: 100%;
+				@media all and (max-width:767px){
+					display:table;
+					position: absolute;
+					height:100%;
+				}
+			}
 			.menu{
 				display: inline-block;
 				margin-top: 22px;
+				@media all and (max-width:767px){
+					width: 100%;
+					display: table-cell;
+					vertical-align: middle;
+				}
+				
 				li{
 					display: inline-block;
 					margin-right: 30px;
+					@media all and (max-width:767px){
+						width: 100%;
+						display: block;
+						text-align: center;
+						margin-bottom: 40px;
+					}
 					&:last-child{
 						margin-right: 0;
 					}
@@ -69,6 +108,9 @@ a{@include transition(all .5s ease-in-out);}
 						font-size: $font-size-m;
 						font-weight: 500;
 						position: relative;
+						@media all and (max-width:767px){
+							font-size:$font-size-x;
+						}
 						&:before{
 							content:"";
 							width: 8px;
@@ -82,7 +124,6 @@ a{@include transition(all .5s ease-in-out);}
 							@include transition(all .5s ease-in-out);
 							@include border-radius(25px);
 							@include opacity(0);
-							
 						}
 						&:hover,&.active{
 							text-decoration:none;
@@ -90,6 +131,41 @@ a{@include transition(all .5s ease-in-out);}
 								@include opacity(1);
 							}
 						}
+					}
+				}
+			}
+		}
+		.social{
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			text-align: center;
+			ul{
+				display: inline-block;
+				li{
+					display: inline-block;
+					width:20px;
+					height:20px;
+					position: relative;
+					margin-right: 10px;
+					a{
+						display: block;
+						position: absolute;
+						left:0;
+						top:0;
+						width: $full;
+						height: $full;
+					}
+					&.fb{
+						background: url(../images/home/fb.png) center no-repeat;
+					}
+					&.tw{
+						background: url(../images/home/tw.png) center no-repeat;
+					}
+					&.you{
+						background: url(../images/home/you.png) center no-repeat;
 					}
 				}
 			}
@@ -114,6 +190,12 @@ a{@include transition(all .5s ease-in-out);}
 				text-align: center;
 				vertical-align: middle;
 				@include text-shadow(1px,1px,5px,$black);
+				padding-left: 15px;
+				padding-right: 15px;
+				@media all and (max-width:480px){
+					font-size: 22px;
+					line-height: 26px;
+				}
 			}
 		}
 		.arrow{
@@ -129,6 +211,9 @@ a{@include transition(all .5s ease-in-out);}
 			right: 0;
 			margin: 0 auto;
 			cursor: pointer;
+			@media all and (max-width:767px){
+				bottom:20px;
+			}
 			span{
 				display: block;
 				margin-bottom: 20px;
@@ -214,6 +299,11 @@ a{@include transition(all .5s ease-in-out);}
 					color: $white;
 					font-size: $font-size-xx;
 					line-height: $font-size-xx-lh;
+					@media all and (max-width:480px){
+						font-size:18px;
+						line-height: 20px;
+						bottom: 10px;
+					}
 					span{
 						display:block;
 					}
@@ -254,6 +344,9 @@ a{@include transition(all .5s ease-in-out);}
 			height: 80px;
 			display: table;
 			font-size: $font-size-m;
+			@media all and (min-width:360px){
+				font-size: 14px;
+			}
 			span{
 				display:table-cell;
 				vertical-align: middle;

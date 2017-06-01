@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	hoverAnimated(); 
+	hamburgerClick();
 });
 
 $(window).on('load', function(){
@@ -20,4 +21,13 @@ var hoverAnimated = function(){
 		});
 	}
 		
+}
+
+//HAMBURGER
+var hamburgerClick = function(){
+	$("#nav-ico").click(function(){
+		$("#nav-ico").toggleClass('open');
+		$(".m-box").slideToggle();
+		$("body").toggleClass('noscroll');
+	});
 }
