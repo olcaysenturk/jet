@@ -23,55 +23,13 @@
 
 	<script src="assets/js/lib/jquery/jquery.js"></script>
 	<script src="assets/js/lib/pace/pace.js"></script>
+	<script src="assets/js/lib/angular/angular.min.js"></script>
 	<script src="assets/js/core.js"></script>
 </head>
-<body>
+<body ng-app="">
 	<div class="site">
 		<!--MENU-->
-		<section class="nav-menu">
-			<div class="row">
-				<div class="logo col-lg-4 col-md-4 col-sm-4 col-xs-6">
-					<a href="javascript:;">
-						<img src="assets/images/home/logo.png" alt="">
-					</a>
-				</div>
-				<div class="m-box col-lg-8 col-md-8 col-sm-8">
-					<div class="nav-content">
-						<ul class="menu">
-							<li>
-								<a href=""><span>Work</span></a>
-							</li>
-							<li>
-								<a href=""><span>About</span></a>
-							</li>
-							<li>
-								<a href=""><span>Contact</span></a>
-							</li>
-							<li>
-								<a href=""><span>Job</span></a>
-							</li>
-						</ul>
-						<div class="social hidden-lg hidden-md hidden-sm">
-							<ul>
-								<li class="fb"><a href="javascript:;"></a></li>
-								<li class="tw"><a href="javascript:;"></a></li>
-								<li class="you"><a href="javascript:;"></a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div id="nav-ico" class="hidden-lg hidden-md hidden-sm">
-				  	<span></span>
-				  	<span></span>
-				  	<span></span>
-				  	<span></span>
-				  	<span></span>
-				  	<span></span>
-				</div>
-				
-			</div>
-		</section>
+		<section class="nav-menu" ng-include="'inc/header.html'"></section>
 		<!--MENU END-->
 
 		<!--HOME BANNER-->
@@ -170,26 +128,7 @@
 		<!--WORK END-->
 
 		<!--FOOTER-->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="copy-r col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<span>
-							2017 © Jet İstanbul
-						</span>
-					</div>
-					<div class="social col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<span>
-							<ul>
-								<li class="fb"><a href="javascript:;"></a></li>
-								<li class="tw"><a href="javascript:;"></a></li>
-								<li class="you"><a href="javascript:;"></a></li>
-							</ul>
-						</span>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<footer  ng-include="'inc/footer.html'"></footer>
 		<!--FOOTER END-->
 	</div>
 	

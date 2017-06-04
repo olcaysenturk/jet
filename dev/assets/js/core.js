@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	hoverAnimated(); 
 	hamburgerClick();
+	gMap();
 });
 
 $(window).on('load', function(){
@@ -30,4 +31,24 @@ var hamburgerClick = function(){
 		$(".m-box").slideToggle();
 		$("body").toggleClass('noscroll');
 	});
+}
+
+//MAP
+var gMap = function(){
+	function initMap() {
+
+        var location = new google.maps.LatLng(41.110251, 29.019240);
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            center: location,
+            zoom: 16,
+            panControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
 }

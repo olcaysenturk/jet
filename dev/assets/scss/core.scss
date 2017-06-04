@@ -55,7 +55,9 @@ a{@include transition(all .5s ease-in-out);}
 				z-index:3;
 			}
 			img{
-
+				&.black{
+					display: none;
+				}
 			}
 		}
 		.m-box{
@@ -168,6 +170,32 @@ a{@include transition(all .5s ease-in-out);}
 						background: url(../images/home/you.png) center no-repeat;
 					}
 				}
+			}
+		}
+		&.black{
+			.logo{
+				img{
+					display:none;
+					&.bl{
+						display:block;
+					}
+				}
+			}
+			.m-box{
+				.menu{
+					li{
+						a{
+							color:  #000;
+							&:hover{
+								color:$jet;
+							}
+							&:before{
+								background: $jet;
+							}
+						}
+					}
+				}
+				
 			}
 		}
 	}
@@ -383,6 +411,89 @@ a{@include transition(all .5s ease-in-out);}
 						}
 						&.you{
 							background: url(../images/home/you.png) center no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.contact{
+		.detail-banner{
+			display:block;
+			width: $full;
+			min-height: 505px;
+			background: #fff;
+			padding-top: 260px;
+			border-bottom: 4px solid $jet;
+		}
+		.detail-banner{
+			.left{
+				font-size: $font-size-x;
+				font-weight: normal;
+				strong{
+					font-weight: bold;
+				}
+			}
+			.center{
+				font-size: $font-size-l;
+				font-weight: 300;
+				strong{
+					font-weight: bold;
+					font-size: $font-size-x;
+				}
+			}
+			.right{
+				font-size: $font-size-l;
+				font-weight: 300;
+				strong{
+					font-weight: bold;
+					font-size: $font-size-x;
+				}
+			}
+		}
+		.map{
+			height: 350px;
+		}
+		.form-b{
+			display: block;
+			width: $full;
+			padding-top: 90px;
+			background: $jet;
+			.text{
+				color: $white;
+				font-size: $font-size-l;
+				margin-left: 90px;
+				strong{
+					font-size: $font-size-x;
+				}
+			}
+			.form{
+				.form-group{
+					display: block;
+					position:relative;
+					margin-bottom: 30px;
+					&:last-child{
+						margin-bottom:0;
+					}
+					input{
+						background: transparent;
+						border:0;
+						border-bottom: 1px solid $white;
+						color: $white;
+						width: 100%;
+						height:30px;
+						font-size:14px;
+					}
+					label{
+						position: absolute;
+						font-weight: 300;
+						font-size: 14px;
+						color: $white;
+						bottom:5px;
+						left: 2px;
+						&.active{
+							font-size: 10px;
+							bottom:20px;
 						}
 					}
 				}

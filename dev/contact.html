@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<title>Jet Istanbul</title> 
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1, user-scalable=no">
+	<meta name="description" content="Jet Istanbul">
+	
+	<meta property="og:title" content="Jet Istanbul">
+	<meta property="og:description" content="Jet Istanbul">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="assets/images/head/og-image.jpg">
+
+	<link rel="stylesheet" href="assets/css/core.min.css">
+
+	<link rel="shortcut icon" href="assets/images/head/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/head/iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/head/ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/head/iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/head/ipad-retina.png">
+
+
+	<script src="assets/js/lib/jquery/jquery.js"></script>
+	<script src="assets/js/lib/pace/pace.js"></script>
+	<script src="assets/js/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script src="assets/js/core.js"></script>
+</head>
+<body ng-app="">
+	<div class="site contact">
+		<!--MENU-->
+		<section class="nav-menu black" ng-include="'inc/header.html'"></section>
+		<!--MENU END-->
+
+		<!--DETAIL BANNER-->
+		<secton class="detail-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-offset-1 left">
+						call us<br>
+						<strong>for everything</strong>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-lg-offset-1 center">
+						<strong>adress</strong><br>
+						Maslak, Bilim Sk (G-42. Sk.),<br>
+						Sun Plaza B Blok -4 Kat,<br>
+						34450 Sarıyer / Istanbul
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-lg-offset-1 right">
+						<strong>phone & e-mail</strong><br>
+						<a href="tel:2122435303">212-243 53 03</a><br>
+						<a href="mailto:hello@jet-istanbul.com">hello@jet-istanbul.com</a>
+					</div>
+				</div>
+			</div>
+		</secton>
+		<!--DETAIL BANNER END-->
+
+		<!--MAP-->
+		<section class="map" id="map"></section>
+		<!--MAP END-->
+
+		<!--FORM-->
+		<section class="form-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text">
+						contact us <br>
+						<strong>for everything</strong>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form">
+						<div class="form-group">
+						  <label for="usr">Name</label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+						<div class="form-group">
+						  <label for="mail">e-Mail</label>
+						  <input type="text" class="form-control" id="mail">
+						</div>
+						<div class="form-group">
+						  <label for="subject">Subject</label>
+						  <input type="text" class="form-control" id="subject">
+						</div>
+						<div class="form-group">
+						  <label for="Message">Message</label>
+						  <input type="text" class="form-control" id="Message">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--FORM END-->
+
+		
+		<!--FOOTER-->
+		<footer  ng-include="'inc/footer.html'"></footer>
+		<!--FOOTER END-->
+	</div>
+	
+</body>
+</html>
