@@ -9,7 +9,7 @@
 @import "css3-mixins";
 @import "plugin/hover/hover";
 
-body {text-size-adjust: 100%; -webkit-overflow-scrolling: touch; background: #f9f9f9; font-family: 'Roboto', sans-serif;}
+body {text-size-adjust: 100%; -webkit-overflow-scrolling: touch; font-family: 'Roboto', sans-serif;}
 body, input, select, textarea {font-size: 13px ; color: $black;}
 h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 600;}
 a {color: $black; text-decoration: none;}
@@ -31,7 +31,7 @@ a{@include transition(all .5s ease-in-out);}
 }
 .clear{clear: both; display: block;}
 .noscroll{overflow:hidden;}
-
+body.home {background: #f9f9f9;}
 //------------------------------------------------------------
 // = LAYOUT
 //------------------------------------------------------------
@@ -55,7 +55,7 @@ a{@include transition(all .5s ease-in-out);}
 				z-index:3;
 			}
 			img{
-				&.black{
+				&.bl{
 					display: none;
 				}
 			}
@@ -418,14 +418,7 @@ a{@include transition(all .5s ease-in-out);}
 		}
 	}
 	&.contact{
-		.detail-banner{
-			display:block;
-			width: $full;
-			min-height: 505px;
-			background: #fff;
-			padding-top: 260px;
-			border-bottom: 4px solid $jet;
-		}
+		
 		.detail-banner{
 			.left{
 				font-size: $font-size-x;
@@ -458,10 +451,11 @@ a{@include transition(all .5s ease-in-out);}
 			display: block;
 			width: $full;
 			padding-top: 90px;
+			padding-bottom:100px;
 			background: $jet;
 			.text{
 				color: $white;
-				font-size: $font-size-l;
+				font-size: $font-size-x;
 				margin-left: 90px;
 				strong{
 					font-size: $font-size-x;
@@ -497,10 +491,188 @@ a{@include transition(all .5s ease-in-out);}
 						}
 					}
 				}
+				.btn-box{
+					display: block;
+					a{
+						display: block;
+						width: 100%;
+						background: #000;
+						color:$white;
+						font-size: $font-size-m;
+						height: 55px;
+						text-align: center;
+						line-height: 55px;
+						&:hover{
+							background: $white;
+							color: $jet;
+						}
+					}
+				}
+			}
+		}
+	}
+	.banner-box{
+		display: table;
+		width: 100%;
+		background: url("../images/home/eyes.jpg") no-repeat;
+		@include background-size(cover);
+		height: 353px;
+		text-align: center;
+		.text{
+			display: table-cell;
+			vertical-align: middle;
+			width:100%;
+		}
+		h4{
+			display: block;
+			color: $white;
+			font-size:$font-size-x;
+			line-height: $font-size-x;
+			width:100%;
+		}
+		p{
+			display: block;
+			width:100%;
+			a{
+				color: $white;
+				font-size:$font-size-l;
+				line-height: $font-size-l;
+				@include opacity(0.5);
+				margin-top: 10px;
+				
+			}
+			
+		}
+	}
+	.detail-banner{
+		display:block;
+		width: $full;
+		min-height: 505px;
+		background: #fff;
+		padding-top: 260px;
+		border-bottom: 4px solid $jet;
+		&.about{
+			background: url("../images/home/eyes-about.jpg") no-repeat;
+			@include background-size(cover);
+		}
+		&.works{
+			border: 0;
+			.text{
+				h1{
+					color: #000;
+					&:before{
+						background: #000;
+					}
+				}
+			}
+			
+		}
+		.text{
+
+			h1{
+				display:block;
+				width: $full;
+				font-size: $font-size-x;
+				line-height: $font-size-x-lh;
+				color: $white;
+				text-align: center;
+				font-weight: normal;
+				position: relative;
+				strong{
+					font-weight: bold;
+				}
+				&:before{
+					content:"";
+					width: 8px;
+					height: 8px;
+					background: $white;
+					@include border-radius(50px);
+					position: absolute;
+					left:0;
+					right:0;
+					margin: 0 auto;
+					top: -20px;
+				}
+			}
+		}
+		
+	}
+	.about-text{
+		padding-top: 120px;
+		padding-bottom: 180px;
+		.title{
+			color: #232323;
+			font-size: $font-size-x;
+			margin-left: 90px;
+			strong{
+				font-size: $font-size-x;
+			}
+		}
+		.text{
+			font-weight: 300;
+			font-size: $font-size-l;
+			line-height: $font-size-xx-lh;
+			color: #232323;
+		}
+	}
+	.client{
+		display: block;
+		padding-top: 90px;
+		padding-bottom: 30px;
+		background: #ececec;
+		.title{
+			color: #232323;
+			font-size: $font-size-x;
+			margin-left: 90px;
+			strong{
+				font-size: $font-size-x;
+			}
+		}
+		.item{
+			ul{
+				display: block;
+				width: 100%;
+				li{
+					display: inline-block;
+					width: 33%;
+					float: left;
+					margin-bottom: 80px;
+					height:60px;
+					.img{
+						display: table;
+						width: 100%;
+						height:60px;
+						img{
+							display: table-cell;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+	.detail-work{
+		background: none !important;
+		.filter{
+			display:block;
+			margin-left: 15px;
+			margin-bottom: 55px;
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				float: left;
+				a{
+					font-size: $font-size-l;
+					color: #969696;
+					&:hover{
+						color: #000;
+					}
+				}
 			}
 		}
 	}
 	
+
 }
 
 

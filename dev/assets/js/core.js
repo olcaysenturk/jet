@@ -2,6 +2,7 @@ $(document).ready(function(){
 	hoverAnimated(); 
 	hamburgerClick();
 	gMap();
+	inputClick();
 });
 
 $(window).on('load', function(){
@@ -36,9 +37,7 @@ var hamburgerClick = function(){
 //MAP
 var gMap = function(){
 	function initMap() {
-
         var location = new google.maps.LatLng(41.110251, 29.019240);
-
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
             center: location,
@@ -47,8 +46,16 @@ var gMap = function(){
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
-
     }
-
     google.maps.event.addDomListener(window, 'load', initMap);
+}
+
+
+    //MAP
+var inputClick = function(){
+	$('.form-group').click(function () {
+	   $(this).find("label").addClass("active");
+	});
+
+
 }

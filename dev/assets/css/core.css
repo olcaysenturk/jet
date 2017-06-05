@@ -5666,7 +5666,6 @@ hr {
 body {
   text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
-  background: #f9f9f9;
   font-family: 'Roboto', sans-serif; }
 
 /* line 13, dev/assets/scss/core.scss */
@@ -5742,6 +5741,10 @@ a {
 .noscroll {
   overflow: hidden; }
 
+/* line 34, dev/assets/scss/core.scss */
+body.home {
+  background: #f9f9f9; }
+
 /* line 39, dev/assets/scss/core.scss */
 .site {
   display: block;
@@ -5765,7 +5768,7 @@ a {
           position: relative;
           z-index: 3; } }
       /* line 58, dev/assets/scss/core.scss */
-      .site .nav-menu .logo img.black {
+      .site .nav-menu .logo img.bl {
         display: none; }
     /* line 63, dev/assets/scss/core.scss */
     .site .nav-menu .m-box {
@@ -6161,63 +6164,56 @@ a {
             /* line 412, dev/assets/scss/core.scss */
             .site footer .social span ul li.you {
               background: url(../images/home/you.png) center no-repeat; }
-  /* line 421, dev/assets/scss/core.scss */
-  .site.contact .detail-banner {
-    display: block;
-    width: 100%;
-    min-height: 505px;
-    background: #fff;
-    padding-top: 260px;
-    border-bottom: 4px solid #369fd9; }
-  /* line 430, dev/assets/scss/core.scss */
+  /* line 423, dev/assets/scss/core.scss */
   .site.contact .detail-banner .left {
     font-size: 26px;
     font-weight: normal; }
-    /* line 433, dev/assets/scss/core.scss */
+    /* line 426, dev/assets/scss/core.scss */
     .site.contact .detail-banner .left strong {
       font-weight: bold; }
-  /* line 437, dev/assets/scss/core.scss */
+  /* line 430, dev/assets/scss/core.scss */
   .site.contact .detail-banner .center {
     font-size: 18px;
     font-weight: 300; }
-    /* line 440, dev/assets/scss/core.scss */
+    /* line 433, dev/assets/scss/core.scss */
     .site.contact .detail-banner .center strong {
       font-weight: bold;
       font-size: 26px; }
-  /* line 445, dev/assets/scss/core.scss */
+  /* line 438, dev/assets/scss/core.scss */
   .site.contact .detail-banner .right {
     font-size: 18px;
     font-weight: 300; }
-    /* line 448, dev/assets/scss/core.scss */
+    /* line 441, dev/assets/scss/core.scss */
     .site.contact .detail-banner .right strong {
       font-weight: bold;
       font-size: 26px; }
-  /* line 454, dev/assets/scss/core.scss */
+  /* line 447, dev/assets/scss/core.scss */
   .site.contact .map {
     height: 350px; }
-  /* line 457, dev/assets/scss/core.scss */
+  /* line 450, dev/assets/scss/core.scss */
   .site.contact .form-b {
     display: block;
     width: 100%;
     padding-top: 90px;
+    padding-bottom: 100px;
     background: #369fd9; }
-    /* line 462, dev/assets/scss/core.scss */
+    /* line 456, dev/assets/scss/core.scss */
     .site.contact .form-b .text {
       color: #fff;
-      font-size: 18px;
+      font-size: 26px;
       margin-left: 90px; }
-      /* line 466, dev/assets/scss/core.scss */
+      /* line 460, dev/assets/scss/core.scss */
       .site.contact .form-b .text strong {
         font-size: 26px; }
-    /* line 471, dev/assets/scss/core.scss */
+    /* line 465, dev/assets/scss/core.scss */
     .site.contact .form-b .form .form-group {
       display: block;
       position: relative;
       margin-bottom: 30px; }
-      /* line 475, dev/assets/scss/core.scss */
+      /* line 469, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group:last-child {
         margin-bottom: 0; }
-      /* line 478, dev/assets/scss/core.scss */
+      /* line 472, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group input {
         background: transparent;
         border: 0;
@@ -6226,7 +6222,7 @@ a {
         width: 100%;
         height: 30px;
         font-size: 14px; }
-      /* line 487, dev/assets/scss/core.scss */
+      /* line 481, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group label {
         position: absolute;
         font-weight: 300;
@@ -6234,7 +6230,195 @@ a {
         color: #fff;
         bottom: 5px;
         left: 2px; }
-        /* line 494, dev/assets/scss/core.scss */
+        /* line 488, dev/assets/scss/core.scss */
         .site.contact .form-b .form .form-group label.active {
           font-size: 10px;
           bottom: 20px; }
+    /* line 494, dev/assets/scss/core.scss */
+    .site.contact .form-b .form .btn-box {
+      display: block; }
+      /* line 496, dev/assets/scss/core.scss */
+      .site.contact .form-b .form .btn-box a {
+        display: block;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px; }
+        /* line 505, dev/assets/scss/core.scss */
+        .site.contact .form-b .form .btn-box a:hover {
+          background: #fff;
+          color: #369fd9; }
+  /* line 514, dev/assets/scss/core.scss */
+  .site .banner-box {
+    display: table;
+    width: 100%;
+    background: url("../images/home/eyes.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -khtml-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 353px;
+    text-align: center; }
+    /* line 521, dev/assets/scss/core.scss */
+    .site .banner-box .text {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%; }
+    /* line 526, dev/assets/scss/core.scss */
+    .site .banner-box h4 {
+      display: block;
+      color: #fff;
+      font-size: 26px;
+      line-height: 26px;
+      width: 100%; }
+    /* line 533, dev/assets/scss/core.scss */
+    .site .banner-box p {
+      display: block;
+      width: 100%; }
+      /* line 536, dev/assets/scss/core.scss */
+      .site .banner-box p a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 18px;
+        filter: alpha(opacity=50);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        -webkit-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        -moz-opacity: 0.5;
+        -ms-opacity: 0.5;
+        -o-opacity: 0.5;
+        opacity: 0.5;
+        margin-top: 10px; }
+  /* line 547, dev/assets/scss/core.scss */
+  .site .detail-banner {
+    display: block;
+    width: 100%;
+    min-height: 505px;
+    background: #fff;
+    padding-top: 260px;
+    border-bottom: 4px solid #369fd9; }
+    /* line 554, dev/assets/scss/core.scss */
+    .site .detail-banner.about {
+      background: url("../images/home/eyes-about.jpg") no-repeat;
+      -webkit-background-size: cover;
+      -khtml-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    /* line 558, dev/assets/scss/core.scss */
+    .site .detail-banner.works {
+      border: 0; }
+      /* line 561, dev/assets/scss/core.scss */
+      .site .detail-banner.works .text h1 {
+        color: #000; }
+        /* line 563, dev/assets/scss/core.scss */
+        .site .detail-banner.works .text h1:before {
+          background: #000; }
+    /* line 572, dev/assets/scss/core.scss */
+    .site .detail-banner .text h1 {
+      display: block;
+      width: 100%;
+      font-size: 26px;
+      line-height: 31px;
+      color: #fff;
+      text-align: center;
+      font-weight: normal;
+      position: relative; }
+      /* line 581, dev/assets/scss/core.scss */
+      .site .detail-banner .text h1 strong {
+        font-weight: bold; }
+      /* line 584, dev/assets/scss/core.scss */
+      .site .detail-banner .text h1:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        -webkit-border-radius: 50px;
+        -khtml-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        border-radius: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -20px; }
+  /* line 600, dev/assets/scss/core.scss */
+  .site .about-text {
+    padding-top: 120px;
+    padding-bottom: 180px; }
+    /* line 603, dev/assets/scss/core.scss */
+    .site .about-text .title {
+      color: #232323;
+      font-size: 26px;
+      margin-left: 90px; }
+      /* line 607, dev/assets/scss/core.scss */
+      .site .about-text .title strong {
+        font-size: 26px; }
+    /* line 611, dev/assets/scss/core.scss */
+    .site .about-text .text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 31px;
+      color: #232323; }
+  /* line 618, dev/assets/scss/core.scss */
+  .site .client {
+    display: block;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    background: #ececec; }
+    /* line 623, dev/assets/scss/core.scss */
+    .site .client .title {
+      color: #232323;
+      font-size: 26px;
+      margin-left: 90px; }
+      /* line 627, dev/assets/scss/core.scss */
+      .site .client .title strong {
+        font-size: 26px; }
+    /* line 632, dev/assets/scss/core.scss */
+    .site .client .item ul {
+      display: block;
+      width: 100%; }
+      /* line 635, dev/assets/scss/core.scss */
+      .site .client .item ul li {
+        display: inline-block;
+        width: 33%;
+        float: left;
+        margin-bottom: 80px;
+        height: 60px; }
+        /* line 641, dev/assets/scss/core.scss */
+        .site .client .item ul li .img {
+          display: table;
+          width: 100%;
+          height: 60px; }
+          /* line 645, dev/assets/scss/core.scss */
+          .site .client .item ul li .img img {
+            display: table-cell;
+            vertical-align: middle; }
+  /* line 654, dev/assets/scss/core.scss */
+  .site .detail-work {
+    background: none !important; }
+    /* line 656, dev/assets/scss/core.scss */
+    .site .detail-work .filter {
+      display: block;
+      margin-left: 15px;
+      margin-bottom: 55px; }
+      /* line 660, dev/assets/scss/core.scss */
+      .site .detail-work .filter li {
+        display: inline-block;
+        margin-right: 20px;
+        float: left; }
+        /* line 664, dev/assets/scss/core.scss */
+        .site .detail-work .filter li a {
+          font-size: 18px;
+          color: #969696; }
+          /* line 667, dev/assets/scss/core.scss */
+          .site .detail-work .filter li a:hover {
+            color: #000; }
