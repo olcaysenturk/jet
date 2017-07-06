@@ -5797,42 +5797,43 @@ body.home {
           .site .nav-menu .m-box .nav-content {
             display: table;
             position: absolute;
+            left: 0;
             height: 100%; } }
-      /* line 87, dev/assets/scss/core.scss */
+      /* line 88, dev/assets/scss/core.scss */
       .site .nav-menu .m-box .menu {
         display: inline-block;
         margin-top: 22px; }
         @media all and (max-width: 767px) {
-          /* line 87, dev/assets/scss/core.scss */
+          /* line 88, dev/assets/scss/core.scss */
           .site .nav-menu .m-box .menu {
             width: 100%;
             display: table-cell;
             vertical-align: middle; } }
-        /* line 96, dev/assets/scss/core.scss */
+        /* line 97, dev/assets/scss/core.scss */
         .site .nav-menu .m-box .menu li {
           display: inline-block;
           margin-right: 30px; }
           @media all and (max-width: 767px) {
-            /* line 96, dev/assets/scss/core.scss */
+            /* line 97, dev/assets/scss/core.scss */
             .site .nav-menu .m-box .menu li {
               width: 100%;
               display: block;
               text-align: center;
               margin-bottom: 40px; } }
-          /* line 105, dev/assets/scss/core.scss */
+          /* line 106, dev/assets/scss/core.scss */
           .site .nav-menu .m-box .menu li:last-child {
             margin-right: 0; }
-          /* line 108, dev/assets/scss/core.scss */
+          /* line 109, dev/assets/scss/core.scss */
           .site .nav-menu .m-box .menu li a {
             color: #fff;
             font-size: 16px;
             font-weight: 500;
             position: relative; }
             @media all and (max-width: 767px) {
-              /* line 108, dev/assets/scss/core.scss */
+              /* line 109, dev/assets/scss/core.scss */
               .site .nav-menu .m-box .menu li a {
                 font-size: 26px; } }
-            /* line 116, dev/assets/scss/core.scss */
+            /* line 117, dev/assets/scss/core.scss */
             .site .nav-menu .m-box .menu li a:before {
               content: "";
               width: 8px;
@@ -5863,10 +5864,10 @@ body.home {
               -ms-opacity: 0;
               -o-opacity: 0;
               opacity: 0; }
-            /* line 130, dev/assets/scss/core.scss */
+            /* line 131, dev/assets/scss/core.scss */
             .site .nav-menu .m-box .menu li a:hover, .site .nav-menu .m-box .menu li a.active {
               text-decoration: none; }
-              /* line 132, dev/assets/scss/core.scss */
+              /* line 133, dev/assets/scss/core.scss */
               .site .nav-menu .m-box .menu li a:hover:before, .site .nav-menu .m-box .menu li a.active:before {
                 filter: alpha(opacity=100);
                 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -5876,7 +5877,7 @@ body.home {
                 -ms-opacity: 1;
                 -o-opacity: 1;
                 opacity: 1; }
-    /* line 140, dev/assets/scss/core.scss */
+    /* line 141, dev/assets/scss/core.scss */
     .site .nav-menu .social {
       display: block;
       width: 100%;
@@ -5884,17 +5885,17 @@ body.home {
       bottom: 20px;
       left: 0;
       text-align: center; }
-      /* line 147, dev/assets/scss/core.scss */
+      /* line 148, dev/assets/scss/core.scss */
       .site .nav-menu .social ul {
         display: inline-block; }
-        /* line 149, dev/assets/scss/core.scss */
+        /* line 150, dev/assets/scss/core.scss */
         .site .nav-menu .social ul li {
           display: inline-block;
           width: 20px;
           height: 20px;
           position: relative;
           margin-right: 10px; }
-          /* line 155, dev/assets/scss/core.scss */
+          /* line 156, dev/assets/scss/core.scss */
           .site .nav-menu .social ul li a {
             display: block;
             position: absolute;
@@ -5902,31 +5903,37 @@ body.home {
             top: 0;
             width: 100%;
             height: 100%; }
-          /* line 163, dev/assets/scss/core.scss */
+          /* line 164, dev/assets/scss/core.scss */
           .site .nav-menu .social ul li.fb {
             background: url(../images/home/fb.png) center no-repeat; }
-          /* line 166, dev/assets/scss/core.scss */
+          /* line 167, dev/assets/scss/core.scss */
           .site .nav-menu .social ul li.tw {
             background: url(../images/home/tw.png) center no-repeat; }
-          /* line 169, dev/assets/scss/core.scss */
+          /* line 170, dev/assets/scss/core.scss */
           .site .nav-menu .social ul li.you {
             background: url(../images/home/you.png) center no-repeat; }
-    /* line 177, dev/assets/scss/core.scss */
+    /* line 178, dev/assets/scss/core.scss */
     .site .nav-menu.black .logo img {
       display: none; }
-      /* line 179, dev/assets/scss/core.scss */
+      /* line 180, dev/assets/scss/core.scss */
       .site .nav-menu.black .logo img.bl {
         display: block; }
-    /* line 187, dev/assets/scss/core.scss */
+    /* line 188, dev/assets/scss/core.scss */
     .site .nav-menu.black .m-box .menu li a {
       color: #000; }
-      /* line 189, dev/assets/scss/core.scss */
+      /* line 190, dev/assets/scss/core.scss */
       .site .nav-menu.black .m-box .menu li a:hover {
         color: #369fd9; }
-      /* line 192, dev/assets/scss/core.scss */
+      /* line 193, dev/assets/scss/core.scss */
       .site .nav-menu.black .m-box .menu li a:before {
         background: #369fd9; }
-  /* line 202, dev/assets/scss/core.scss */
+    /* line 202, dev/assets/scss/core.scss */
+    .site .nav-menu.black #nav-ico.open span {
+      background: #fff; }
+    /* line 206, dev/assets/scss/core.scss */
+    .site .nav-menu.black #nav-ico span {
+      background: #369fd9; }
+  /* line 212, dev/assets/scss/core.scss */
   .site .home-banner {
     display: block;
     width: 100%;
@@ -5939,12 +5946,12 @@ body.home {
     -o-background-size: cover;
     background-size: cover;
     position: relative; }
-    /* line 209, dev/assets/scss/core.scss */
+    /* line 219, dev/assets/scss/core.scss */
     .site .home-banner .text {
       display: table;
       width: 100%;
       height: 100vh; }
-      /* line 213, dev/assets/scss/core.scss */
+      /* line 223, dev/assets/scss/core.scss */
       .site .home-banner .text h1 {
         display: table-cell;
         font-size: 32px;
@@ -5952,15 +5959,14 @@ body.home {
         color: #fff;
         text-align: center;
         vertical-align: middle;
-        text-shadow: 1px 1px 5px #000;
         padding-left: 15px;
         padding-right: 15px; }
         @media all and (max-width: 480px) {
-          /* line 213, dev/assets/scss/core.scss */
+          /* line 223, dev/assets/scss/core.scss */
           .site .home-banner .text h1 {
             font-size: 22px;
             line-height: 26px; } }
-    /* line 229, dev/assets/scss/core.scss */
+    /* line 239, dev/assets/scss/core.scss */
     .site .home-banner .arrow {
       position: absolute;
       display: inline-block;
@@ -5975,40 +5981,31 @@ body.home {
       margin: 0 auto;
       cursor: pointer; }
       @media all and (max-width: 767px) {
-        /* line 229, dev/assets/scss/core.scss */
+        /* line 239, dev/assets/scss/core.scss */
         .site .home-banner .arrow {
           bottom: 20px; } }
-      /* line 245, dev/assets/scss/core.scss */
+      /* line 255, dev/assets/scss/core.scss */
       .site .home-banner .arrow span {
         display: block;
         margin-bottom: 20px;
         font-size: 40px;
         line-height: 0;
         width: 100%; }
-      /* line 252, dev/assets/scss/core.scss */
-      .site .home-banner .arrow:hover {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent; }
-        /* line 254, dev/assets/scss/core.scss */
-        .site .home-banner .arrow:hover:hover, .site .home-banner .arrow:hover:focus, .site .home-banner .arrow:hover:active {
-          -webkit-animation-name: hvr-wobble-vertical;
-          animation-name: hvr-wobble-vertical;
-          -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-          -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1; }
-  /* line 265, dev/assets/scss/core.scss */
+      /* line 264, dev/assets/scss/core.scss */
+      .site .home-banner .arrow:hover:hover, .site .home-banner .arrow:hover:focus, .site .home-banner .arrow:hover:active {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+  /* line 275, dev/assets/scss/core.scss */
   .site .h-com {
     display: block;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 50px; }
-    /* line 270, dev/assets/scss/core.scss */
+    /* line 280, dev/assets/scss/core.scss */
     .site .h-com h2 {
       display: block;
       color: #232323;
@@ -6017,10 +6014,10 @@ body.home {
       font-weight: normal;
       position: relative;
       padding-bottom: 50px; }
-      /* line 278, dev/assets/scss/core.scss */
+      /* line 288, dev/assets/scss/core.scss */
       .site .h-com h2 strong {
         font-weight: 600; }
-      /* line 281, dev/assets/scss/core.scss */
+      /* line 291, dev/assets/scss/core.scss */
       .site .h-com h2:before {
         content: "";
         width: 8px;
@@ -6035,56 +6032,83 @@ body.home {
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
         border-radius: 25px; }
-  /* line 293, dev/assets/scss/core.scss */
+  /* line 303, dev/assets/scss/core.scss */
   .site .home-work {
     display: block;
     width: 100%;
     margin-bottom: 140px; }
-    /* line 297, dev/assets/scss/core.scss */
-    .site .home-work .item {
+    /* line 307, dev/assets/scss/core.scss */
+    .site .home-work .item, .site .home-work .element-item {
       position: relative;
       margin-bottom: 30px;
       cursor: pointer; }
-      /* line 304, dev/assets/scss/core.scss */
-      .site .home-work .item:hover .img img {
+      /* line 311, dev/assets/scss/core.scss */
+      .site .home-work .item .box, .site .home-work .element-item .box {
+        position: relative;
+        -webkit-transition: all 0.2s ease-in-out;
+        -khtml-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+      /* line 316, dev/assets/scss/core.scss */
+      .site .home-work .item:hover .box, .site .home-work .element-item:hover .box {
+        margin-top: -10px; }
+      /* line 324, dev/assets/scss/core.scss */
+      .site .home-work .item.aig:hover .img img, .site .home-work .element-item.aig:hover .img img {
+        -webkit-box-shadow: 0px 6px 31px -6px blue;
+        -moz-box-shadow: 0px 6px 31px -6px blue;
+        box-shadow: 0px 6px 31px -6px blue; }
+      /* line 335, dev/assets/scss/core.scss */
+      .site .home-work .item.bkm:hover .img img, .site .home-work .element-item.bkm:hover .img img {
         -webkit-box-shadow: 0px 6px 31px -6px red;
         -moz-box-shadow: 0px 6px 31px -6px red;
         box-shadow: 0px 6px 31px -6px red; }
-      /* line 311, dev/assets/scss/core.scss */
-      .site .home-work .item .text-b {
+      /* line 346, dev/assets/scss/core.scss */
+      .site .home-work .item.tem:hover .img img, .site .home-work .element-item.tem:hover .img img {
+        -webkit-box-shadow: 0px 6px 31px -6px #154c6b;
+        -moz-box-shadow: 0px 6px 31px -6px #154c6b;
+        box-shadow: 0px 6px 31px -6px #154c6b; }
+      /* line 357, dev/assets/scss/core.scss */
+      .site .home-work .item.car:hover .img img, .site .home-work .element-item.car:hover .img img {
+        -webkit-box-shadow: 0px 6px 31px -6px black;
+        -moz-box-shadow: 0px 6px 31px -6px black;
+        box-shadow: 0px 6px 31px -6px black; }
+      /* line 365, dev/assets/scss/core.scss */
+      .site .home-work .item .text-b, .site .home-work .element-item .text-b {
         position: absolute;
         width: calc(100% - 60px);
         height: 100%;
         left: 45px;
         top: 0; }
-        /* line 317, dev/assets/scss/core.scss */
-        .site .home-work .item .text-b h3 {
+        /* line 371, dev/assets/scss/core.scss */
+        .site .home-work .item .text-b h3, .site .home-work .element-item .text-b h3 {
           display: block;
           color: #fff;
           font-size: 18px;
           margin-top: 30px; }
-        /* line 323, dev/assets/scss/core.scss */
-        .site .home-work .item .text-b .job {
+        /* line 377, dev/assets/scss/core.scss */
+        .site .home-work .item .text-b .job, .site .home-work .element-item .text-b .job {
           position: absolute;
           left: 0;
           bottom: 30px;
           color: #fff;
           font-size: 28px;
           line-height: 31px; }
-          @media all and (max-width: 480px) {
-            /* line 323, dev/assets/scss/core.scss */
-            .site .home-work .item .text-b .job {
+          @media all and (max-width: 992px) {
+            /* line 377, dev/assets/scss/core.scss */
+            .site .home-work .item .text-b .job, .site .home-work .element-item .text-b .job {
               font-size: 18px;
               line-height: 20px;
               bottom: 10px; } }
-          /* line 335, dev/assets/scss/core.scss */
-          .site .home-work .item .text-b .job span {
+          /* line 389, dev/assets/scss/core.scss */
+          .site .home-work .item .text-b .job span, .site .home-work .element-item .text-b .job span {
             display: block; }
-      /* line 340, dev/assets/scss/core.scss */
-      .site .home-work .item .img {
+      /* line 394, dev/assets/scss/core.scss */
+      .site .home-work .item .img, .site .home-work .element-item .img {
         display: block; }
-        /* line 342, dev/assets/scss/core.scss */
-        .site .home-work .item .img img {
+        /* line 396, dev/assets/scss/core.scss */
+        .site .home-work .item .img img, .site .home-work .element-item .img img {
           position: relative;
           display: block;
           width: 100%;
@@ -6094,7 +6118,7 @@ body.home {
           -ms-transition: all 0.5s ease-in-out;
           -o-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
-    /* line 350, dev/assets/scss/core.scss */
+    /* line 404, dev/assets/scss/core.scss */
     .site .home-work .btn-box {
       display: block;
       margin-top: 10px;
@@ -6102,52 +6126,52 @@ body.home {
       border-bottom: 1px solid #e0e0e0;
       padding: 25px 0;
       text-align: center; }
-      /* line 357, dev/assets/scss/core.scss */
+      /* line 411, dev/assets/scss/core.scss */
       .site .home-work .btn-box a {
         display: inline-block;
         color: #232323;
         font-weight: 500;
         font-size: 16px; }
-  /* line 365, dev/assets/scss/core.scss */
+  /* line 419, dev/assets/scss/core.scss */
   .site footer {
     display: block;
     width: 100%;
     background: #369fd9;
     height: 80px; }
-    /* line 370, dev/assets/scss/core.scss */
+    /* line 424, dev/assets/scss/core.scss */
     .site footer .copy-r {
       color: #fff;
       height: 80px;
       display: table;
       font-size: 16px; }
       @media all and (min-width: 360px) {
-        /* line 370, dev/assets/scss/core.scss */
+        /* line 424, dev/assets/scss/core.scss */
         .site footer .copy-r {
           font-size: 14px; } }
-      /* line 378, dev/assets/scss/core.scss */
+      /* line 432, dev/assets/scss/core.scss */
       .site footer .copy-r span {
         display: table-cell;
         vertical-align: middle; }
-    /* line 383, dev/assets/scss/core.scss */
+    /* line 437, dev/assets/scss/core.scss */
     .site footer .social {
       height: 80px;
       display: table; }
-      /* line 386, dev/assets/scss/core.scss */
+      /* line 440, dev/assets/scss/core.scss */
       .site footer .social span {
         display: table-cell;
         vertical-align: middle;
         text-align: right; }
-        /* line 390, dev/assets/scss/core.scss */
+        /* line 444, dev/assets/scss/core.scss */
         .site footer .social span ul {
           display: inline-block; }
-          /* line 392, dev/assets/scss/core.scss */
+          /* line 446, dev/assets/scss/core.scss */
           .site footer .social span ul li {
             display: inline-block;
             width: 20px;
             height: 20px;
             position: relative;
             margin-right: 10px; }
-            /* line 398, dev/assets/scss/core.scss */
+            /* line 452, dev/assets/scss/core.scss */
             .site footer .social span ul li a {
               display: block;
               position: absolute;
@@ -6155,65 +6179,86 @@ body.home {
               top: 0;
               width: 100%;
               height: 100%; }
-            /* line 406, dev/assets/scss/core.scss */
+            /* line 460, dev/assets/scss/core.scss */
             .site footer .social span ul li.fb {
               background: url(../images/home/fb.png) center no-repeat; }
-            /* line 409, dev/assets/scss/core.scss */
+            /* line 463, dev/assets/scss/core.scss */
             .site footer .social span ul li.tw {
               background: url(../images/home/tw.png) center no-repeat; }
-            /* line 412, dev/assets/scss/core.scss */
+            /* line 466, dev/assets/scss/core.scss */
             .site footer .social span ul li.you {
               background: url(../images/home/you.png) center no-repeat; }
-  /* line 423, dev/assets/scss/core.scss */
+  @media all and (max-width: 767px) {
+    /* line 476, dev/assets/scss/core.scss */
+    .site.contact .detail-banner {
+      padding-top: 120px; } }
+  /* line 481, dev/assets/scss/core.scss */
   .site.contact .detail-banner .left {
     font-size: 26px;
     font-weight: normal; }
-    /* line 426, dev/assets/scss/core.scss */
+    @media all and (max-width: 767px) {
+      /* line 481, dev/assets/scss/core.scss */
+      .site.contact .detail-banner .left {
+        margin-bottom: 60px; } }
+    /* line 487, dev/assets/scss/core.scss */
     .site.contact .detail-banner .left strong {
       font-weight: bold; }
-  /* line 430, dev/assets/scss/core.scss */
+  /* line 491, dev/assets/scss/core.scss */
   .site.contact .detail-banner .center {
     font-size: 18px;
     font-weight: 300; }
-    /* line 433, dev/assets/scss/core.scss */
+    @media all and (max-width: 767px) {
+      /* line 491, dev/assets/scss/core.scss */
+      .site.contact .detail-banner .center {
+        margin-bottom: 60px; } }
+    /* line 497, dev/assets/scss/core.scss */
     .site.contact .detail-banner .center strong {
       font-weight: bold;
       font-size: 26px; }
-  /* line 438, dev/assets/scss/core.scss */
+  /* line 502, dev/assets/scss/core.scss */
   .site.contact .detail-banner .right {
     font-size: 18px;
     font-weight: 300; }
-    /* line 441, dev/assets/scss/core.scss */
+    @media all and (max-width: 767px) {
+      /* line 502, dev/assets/scss/core.scss */
+      .site.contact .detail-banner .right {
+        margin-bottom: 60px; } }
+    /* line 508, dev/assets/scss/core.scss */
     .site.contact .detail-banner .right strong {
       font-weight: bold;
       font-size: 26px; }
-  /* line 447, dev/assets/scss/core.scss */
+  /* line 514, dev/assets/scss/core.scss */
   .site.contact .map {
     height: 350px; }
-  /* line 450, dev/assets/scss/core.scss */
+  /* line 517, dev/assets/scss/core.scss */
   .site.contact .form-b {
     display: block;
     width: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
     background: #369fd9; }
-    /* line 456, dev/assets/scss/core.scss */
+    /* line 523, dev/assets/scss/core.scss */
     .site.contact .form-b .text {
       color: #fff;
       font-size: 26px;
       margin-left: 90px; }
-      /* line 460, dev/assets/scss/core.scss */
+      @media all and (max-width: 767px) {
+        /* line 523, dev/assets/scss/core.scss */
+        .site.contact .form-b .text {
+          margin-left: 0;
+          margin-bottom: 30px; } }
+      /* line 531, dev/assets/scss/core.scss */
       .site.contact .form-b .text strong {
         font-size: 26px; }
-    /* line 465, dev/assets/scss/core.scss */
+    /* line 536, dev/assets/scss/core.scss */
     .site.contact .form-b .form .form-group {
       display: block;
       position: relative;
       margin-bottom: 30px; }
-      /* line 469, dev/assets/scss/core.scss */
+      /* line 540, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group:last-child {
         margin-bottom: 0; }
-      /* line 472, dev/assets/scss/core.scss */
+      /* line 543, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group input {
         background: transparent;
         border: 0;
@@ -6222,22 +6267,28 @@ body.home {
         width: 100%;
         height: 30px;
         font-size: 14px; }
-      /* line 481, dev/assets/scss/core.scss */
+      /* line 552, dev/assets/scss/core.scss */
       .site.contact .form-b .form .form-group label {
         position: absolute;
         font-weight: 300;
         font-size: 14px;
         color: #fff;
         bottom: 5px;
-        left: 2px; }
-        /* line 488, dev/assets/scss/core.scss */
+        left: 2px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -khtml-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        /* line 560, dev/assets/scss/core.scss */
         .site.contact .form-b .form .form-group label.active {
           font-size: 10px;
           bottom: 20px; }
-    /* line 494, dev/assets/scss/core.scss */
+    /* line 566, dev/assets/scss/core.scss */
     .site.contact .form-b .form .btn-box {
       display: block; }
-      /* line 496, dev/assets/scss/core.scss */
+      /* line 568, dev/assets/scss/core.scss */
       .site.contact .form-b .form .btn-box a {
         display: block;
         width: 100%;
@@ -6247,11 +6298,10 @@ body.home {
         height: 55px;
         text-align: center;
         line-height: 55px; }
-        /* line 505, dev/assets/scss/core.scss */
+        /* line 577, dev/assets/scss/core.scss */
         .site.contact .form-b .form .btn-box a:hover {
-          background: #fff;
           color: #369fd9; }
-  /* line 514, dev/assets/scss/core.scss */
+  /* line 585, dev/assets/scss/core.scss */
   .site .banner-box {
     display: table;
     width: 100%;
@@ -6264,23 +6314,23 @@ body.home {
     background-size: cover;
     height: 353px;
     text-align: center; }
-    /* line 521, dev/assets/scss/core.scss */
+    /* line 592, dev/assets/scss/core.scss */
     .site .banner-box .text {
       display: table-cell;
       vertical-align: middle;
       width: 100%; }
-    /* line 526, dev/assets/scss/core.scss */
+    /* line 597, dev/assets/scss/core.scss */
     .site .banner-box h4 {
       display: block;
       color: #fff;
       font-size: 26px;
       line-height: 26px;
       width: 100%; }
-    /* line 533, dev/assets/scss/core.scss */
+    /* line 604, dev/assets/scss/core.scss */
     .site .banner-box p {
       display: block;
       width: 100%; }
-      /* line 536, dev/assets/scss/core.scss */
+      /* line 607, dev/assets/scss/core.scss */
       .site .banner-box p a {
         color: #fff;
         font-size: 18px;
@@ -6294,7 +6344,7 @@ body.home {
         -o-opacity: 0.5;
         opacity: 0.5;
         margin-top: 10px; }
-  /* line 547, dev/assets/scss/core.scss */
+  /* line 618, dev/assets/scss/core.scss */
   .site .detail-banner {
     display: block;
     width: 100%;
@@ -6302,7 +6352,12 @@ body.home {
     background: #fff;
     padding-top: 260px;
     border-bottom: 4px solid #369fd9; }
-    /* line 554, dev/assets/scss/core.scss */
+    @media all and (max-width: 360px) {
+      /* line 618, dev/assets/scss/core.scss */
+      .site .detail-banner {
+        min-height: 300px;
+        padding-top: 140px; } }
+    /* line 629, dev/assets/scss/core.scss */
     .site .detail-banner.about {
       background: url("../images/home/eyes-about.jpg") no-repeat;
       -webkit-background-size: cover;
@@ -6311,16 +6366,33 @@ body.home {
       -ms-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
-    /* line 558, dev/assets/scss/core.scss */
+    /* line 633, dev/assets/scss/core.scss */
     .site .detail-banner.works {
       border: 0; }
-      /* line 561, dev/assets/scss/core.scss */
+      /* line 636, dev/assets/scss/core.scss */
       .site .detail-banner.works .text h1 {
         color: #000; }
-        /* line 563, dev/assets/scss/core.scss */
+        /* line 638, dev/assets/scss/core.scss */
         .site .detail-banner.works .text h1:before {
           background: #000; }
-    /* line 572, dev/assets/scss/core.scss */
+    /* line 647, dev/assets/scss/core.scss */
+    .site .detail-banner.detail .text h1 {
+      color: #fff;
+      text-align: left;
+      font-size: 30px;
+      line-height: 30px; }
+      /* line 652, dev/assets/scss/core.scss */
+      .site .detail-banner.detail .text h1 span {
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 30px;
+        display: inline-block; }
+      /* line 658, dev/assets/scss/core.scss */
+      .site .detail-banner.detail .text h1:before {
+        background: #fff;
+        right: initial;
+        left: 0; }
+    /* line 668, dev/assets/scss/core.scss */
     .site .detail-banner .text h1 {
       display: block;
       width: 100%;
@@ -6330,10 +6402,15 @@ body.home {
       text-align: center;
       font-weight: normal;
       position: relative; }
-      /* line 581, dev/assets/scss/core.scss */
+      /* line 677, dev/assets/scss/core.scss */
       .site .detail-banner .text h1 strong {
         font-weight: bold; }
-      /* line 584, dev/assets/scss/core.scss */
+      @media all and (max-width: 360px) {
+        /* line 668, dev/assets/scss/core.scss */
+        .site .detail-banner .text h1 {
+          font-size: 20px;
+          line-height: 22px; } }
+      /* line 684, dev/assets/scss/core.scss */
       .site .detail-banner .text h1:before {
         content: "";
         width: 8px;
@@ -6350,75 +6427,244 @@ body.home {
         right: 0;
         margin: 0 auto;
         top: -20px; }
-  /* line 600, dev/assets/scss/core.scss */
+  /* line 700, dev/assets/scss/core.scss */
   .site .about-text {
     padding-top: 120px;
     padding-bottom: 180px; }
-    /* line 603, dev/assets/scss/core.scss */
+    /* line 703, dev/assets/scss/core.scss */
     .site .about-text .title {
       color: #232323;
       font-size: 26px;
       margin-left: 90px; }
-      /* line 607, dev/assets/scss/core.scss */
+      @media all and (max-width: 767px) {
+        /* line 703, dev/assets/scss/core.scss */
+        .site .about-text .title {
+          margin-left: 0;
+          margin-bottom: 30px; } }
+      /* line 711, dev/assets/scss/core.scss */
       .site .about-text .title strong {
         font-size: 26px; }
-    /* line 611, dev/assets/scss/core.scss */
+    /* line 715, dev/assets/scss/core.scss */
     .site .about-text .text {
       font-weight: 300;
       font-size: 18px;
       line-height: 31px;
       color: #232323; }
-  /* line 618, dev/assets/scss/core.scss */
+  /* line 722, dev/assets/scss/core.scss */
   .site .client {
     display: block;
     padding-top: 90px;
     padding-bottom: 30px;
     background: #ececec; }
-    /* line 623, dev/assets/scss/core.scss */
+    /* line 727, dev/assets/scss/core.scss */
     .site .client .title {
       color: #232323;
       font-size: 26px;
       margin-left: 90px; }
-      /* line 627, dev/assets/scss/core.scss */
+      @media all and (max-width: 767px) {
+        /* line 727, dev/assets/scss/core.scss */
+        .site .client .title {
+          margin-left: 0;
+          margin-bottom: 30px; } }
+      /* line 735, dev/assets/scss/core.scss */
       .site .client .title strong {
         font-size: 26px; }
-    /* line 632, dev/assets/scss/core.scss */
+    /* line 740, dev/assets/scss/core.scss */
     .site .client .item ul {
       display: block;
       width: 100%; }
-      /* line 635, dev/assets/scss/core.scss */
+      /* line 743, dev/assets/scss/core.scss */
       .site .client .item ul li {
         display: inline-block;
         width: 33%;
         float: left;
         margin-bottom: 80px;
         height: 60px; }
-        /* line 641, dev/assets/scss/core.scss */
+        @media all and (max-width: 420px) {
+          /* line 743, dev/assets/scss/core.scss */
+          .site .client .item ul li {
+            width: 50%;
+            text-align: center; } }
+        /* line 753, dev/assets/scss/core.scss */
         .site .client .item ul li .img {
           display: table;
           width: 100%;
           height: 60px; }
-          /* line 645, dev/assets/scss/core.scss */
+          /* line 757, dev/assets/scss/core.scss */
           .site .client .item ul li .img img {
             display: table-cell;
             vertical-align: middle; }
-  /* line 654, dev/assets/scss/core.scss */
+  /* line 766, dev/assets/scss/core.scss */
   .site .detail-work {
     background: none !important; }
-    /* line 656, dev/assets/scss/core.scss */
+    /* line 768, dev/assets/scss/core.scss */
     .site .detail-work .filter {
       display: block;
       margin-left: 15px;
       margin-bottom: 55px; }
-      /* line 660, dev/assets/scss/core.scss */
+      /* line 772, dev/assets/scss/core.scss */
       .site .detail-work .filter li {
         display: inline-block;
         margin-right: 20px;
         float: left; }
-        /* line 664, dev/assets/scss/core.scss */
+        /* line 776, dev/assets/scss/core.scss */
         .site .detail-work .filter li a {
           font-size: 18px;
           color: #969696; }
-          /* line 667, dev/assets/scss/core.scss */
+          /* line 779, dev/assets/scss/core.scss */
           .site .detail-work .filter li a:hover {
             color: #000; }
+  /* line 786, dev/assets/scss/core.scss */
+  .site .sinekafa {
+    background: url(../images/sinekafa/sinekafa-detail-1.jpg) center no-repeat #b9202d;
+    height: 700px;
+    border-bottom: 4px solid #0e80e1 !important; }
+    /* line 790, dev/assets/scss/core.scss */
+    .site .sinekafa .download {
+      display: block;
+      margin-top: 43px; }
+      /* line 793, dev/assets/scss/core.scss */
+      .site .sinekafa .download li {
+        display: inline-block; }
+        /* line 795, dev/assets/scss/core.scss */
+        .site .sinekafa .download li:first-child {
+          margin-right: 13px; }
+  /* line 801, dev/assets/scss/core.scss */
+  .site .works-detail-page {
+    display: block;
+    width: 100%; }
+    /* line 804, dev/assets/scss/core.scss */
+    .site .works-detail-page .c-text {
+      display: block;
+      width: 100%;
+      padding-top: 110px;
+      padding-bottom: 125px; }
+      /* line 809, dev/assets/scss/core.scss */
+      .site .works-detail-page .c-text .title {
+        padding-left: 100px; }
+        /* line 811, dev/assets/scss/core.scss */
+        .site .works-detail-page .c-text .title h2 {
+          display: block;
+          font-size: 26px;
+          font-weight: 26px;
+          color: #232323;
+          margin-bottom: 50px; }
+          /* line 817, dev/assets/scss/core.scss */
+          .site .works-detail-page .c-text .title h2 b {
+            font-weight: bold; }
+        /* line 821, dev/assets/scss/core.scss */
+        .site .works-detail-page .c-text .title .item {
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          line-height: 16px;
+          color: #232323;
+          margin-bottom: 30px; }
+          /* line 828, dev/assets/scss/core.scss */
+          .site .works-detail-page .c-text .title .item:last-child {
+            margin-bottom: 0; }
+          /* line 831, dev/assets/scss/core.scss */
+          .site .works-detail-page .c-text .title .item b {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 18px;
+            display: block;
+            margin-top: 10px; }
+      /* line 841, dev/assets/scss/core.scss */
+      .site .works-detail-page .c-text .text p {
+        font-size: 16px;
+        line-height: 31px;
+        color: #232323;
+        max-width: 420px; }
+    /* line 849, dev/assets/scss/core.scss */
+    .site .works-detail-page .detail-img {
+      background: #b9222d;
+      text-align: center;
+      padding-top: 95px;
+      padding-bottom: 95px; }
+    /* line 855, dev/assets/scss/core.scss */
+    .site .works-detail-page .detail-img-v1 {
+      background: #b9222d;
+      text-align: left;
+      padding-top: 55px;
+      border-bottom: 1px solid #fff; }
+    /* line 861, dev/assets/scss/core.scss */
+    .site .works-detail-page .v-text {
+      display: block;
+      width: 100%;
+      padding-top: 100px; }
+      /* line 865, dev/assets/scss/core.scss */
+      .site .works-detail-page .v-text h2 {
+        display: block;
+        font-size: 26px;
+        font-weight: 26px;
+        color: #232323;
+        margin-bottom: 50px;
+        text-align: center; }
+        /* line 872, dev/assets/scss/core.scss */
+        .site .works-detail-page .v-text h2 b {
+          font-weight: bold; }
+      /* line 876, dev/assets/scss/core.scss */
+      .site .works-detail-page .v-text p {
+        font-size: 16px;
+        line-height: 31px;
+        color: #232323;
+        margin-bottom: 90px;
+        text-align: center; }
+        /* line 882, dev/assets/scss/core.scss */
+        .site .works-detail-page .v-text p span {
+          max-width: 420px;
+          display: inline-block; }
+      /* line 887, dev/assets/scss/core.scss */
+      .site .works-detail-page .v-text .video-b {
+        display: block;
+        text-align: center; }
+        /* line 890, dev/assets/scss/core.scss */
+        .site .works-detail-page .v-text .video-b iframe {
+          width: 880px;
+          margin-bottom: 180px; }
+    /* line 896, dev/assets/scss/core.scss */
+    .site .works-detail-page .nav {
+      display: block; }
+      /* line 898, dev/assets/scss/core.scss */
+      .site .works-detail-page .nav .item {
+        position: relative; }
+        /* line 900, dev/assets/scss/core.scss */
+        .site .works-detail-page .nav .item .text {
+          position: absolute;
+          right: 100px;
+          top: calc(50%);
+          font-size: 26px;
+          line-height: 26px;
+          text-align: right;
+          color: #fff; }
+          /* line 908, dev/assets/scss/core.scss */
+          .site .works-detail-page .nav .item .text a {
+            color: #fff;
+            text-decoration: none; }
+          /* line 912, dev/assets/scss/core.scss */
+          .site .works-detail-page .nav .item .text i {
+            font-style: normal;
+            display: block;
+            font-size: 18px;
+            filter: alpha(opacity=50);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            -webkit-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            -moz-opacity: 0.5;
+            -ms-opacity: 0.5;
+            -o-opacity: 0.5;
+            opacity: 0.5; }
+        /* line 920, dev/assets/scss/core.scss */
+        .site .works-detail-page .nav .item:last-child .text {
+          position: absolute;
+          left: 100px;
+          text-align: left; }
+
+/* line 938, dev/assets/scss/core.scss */
+.noscroll .logo img {
+  display: block !important; }
+
+/* line 941, dev/assets/scss/core.scss */
+.noscroll .logo .bl {
+  display: none !important; }
